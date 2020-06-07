@@ -12,6 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }*/
+
 img{
     width:100%;
     height:auto;
@@ -19,8 +20,8 @@ img{
 
 #home .onephoto{
   float: left;
-  width: 33.3%;
-  height: 300px;
+  width: 25%;
+  height: 230px;
   overflow: hidden;
 }
 
@@ -51,22 +52,30 @@ img{
   transform: scale(1.5);
 }
 
+#onemovie .part1{
+  background-color: #7952b3;
+}
+
 @media(max-width:992px){
   #home .onephoto{
-    height:220px;
+    height:170px;
   }
 }
 
 @media(max-width:768px){
   #home .onephoto{
-    width: 49.99999%;
-    height:185px;
+    width: 33.333%;
+    height:160px;
   }
 }
 
 @media(max-width:576px){
+  #home .onephoto{
+    width: 50%;
+    height:185px;
+  }
   #bigimage img{
-    width:95%;
+    width:99%;
     height: auto;
     cursor: pointer;
   }

@@ -29,9 +29,7 @@ class Movie extends React.Component{
                                             <p className="card-text">
                                                 {value.plot.slice(0,30)}....   
                                             </p>
-                                            
                                             <Link className="btn btn-primary" to={`/unfilm/${key}`}>Voir les détailles</Link>
-                                            
                                         </div>
                                     </div>
                                 </div>
