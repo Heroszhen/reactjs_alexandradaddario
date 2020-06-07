@@ -1,3 +1,4 @@
+/*
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,63 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}*/
+img{
+    width:100%;
+    height:auto;
+}
+
+#home .onephoto{
+  float: left;
+  width: 33.3%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#bigimage{
+  position: absolute;
+  z-index: 5000;
+  position: fixed;
+  top:0;
+  width:100%;
+  height:100vh;
+  background-color:rgba(0,0,0,.5);
+  text-align: center;
+  padding:10px;
+}
+
+#bigimage img{
+  height:95%;
+  width: auto;
+  cursor: pointer;
+}
+
+#movie .card{
+  overflow: hidden;
+  transition:.5s;
+}
+
+#movie .card img:hover{
+  transform: scale(1.5);
+}
+
+@media(max-width:992px){
+  #home .onephoto{
+    height:220px;
+  }
+}
+
+@media(max-width:768px){
+  #home .onephoto{
+    width: 49.99999%;
+    height:185px;
+  }
+}
+
+@media(max-width:576px){
+  #bigimage img{
+    width:95%;
+    height: auto;
+    cursor: pointer;
+  }
 }
